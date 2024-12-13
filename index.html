@@ -4,13 +4,112 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
-        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Spotify</title>
     </head>
     <body>
         <main>
-            <nav></nav>
+            <nav>
+                <div class="nav-top">
+                    <a href="#">
+                        <img id="logo-small" src="./img/logo-small.svg" alt="logo-small">
+                        <img id="logo" src="./img/logo.svg" alt="logo">
+                    </a>
+                    <ul class="home-nav">
+                        <li>
+                            <a href="#" class="flex-center">
+                                <img src="./img/home.svg" alt="home">
+                                <span class="text-nav">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex-center">
+                                <img src="./img/search.svg" alt="search">
+                                <span class="text-nav">Cerca</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex-center">
+                                <img src="./img/libreria.svg" alt="library">
+                                <span class="text-nav">La tua libreria</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="playlist-nav  text-nav">
+                        <li>
+                            <strong>Playlist</strong>
+                        </li>
+                        <li>
+                            <span id="square"><strong>+</strong></span>
+                            <span>Crea Playlist</span>
+                        </li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
+                <div class="nav-bottom">
+                    <ul>
+                        <li>
+                            <a href="#" class="flex-center">
+                                <img id="img-dowload" src="./img/download.svg" alt="dowload">
+                                <span class="text-nav">Installa app</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="#" class="flex-center">
+                                <img id="img-user" src="./img/profile.svg" alt="user">
+                                <span class="text-nav">John Doe</span>                                
+                            </a>
+                        </li>
+                    </ul>                    
+                </div>
+            </nav>
             <section>
-                <header></header>
+                <header>
+                    <button class="btn upgrade">EFFETTUA L'UPGRADE</button>
+                </header>
+                <div class="container container-top-bar">
+                    <span class="text-top-bar">IN EVIDENZA</span>
+                    <span class="text-top-bar">PODCAST</span>
+                    <span class="text-top-bar">CLASSIFICHE</span>
+                    <span class="text-top-bar">GENERI E MOOD</span>
+                    <span class="text-top-bar">NUOVE USCITE</span>
+                    <span class="text-top-bar">SCOPRI</span>
+                </div>
+                <h1 class="color-text1 title-recently"><strong>Recently played</strong></h1>
+                <div class="container container-recently">
+                    <div class="container card">
+                        <img class="img-card" src="./img/metal_lifting.jpg" alt="metal">
+                        <strong class="title-card">Heavy Metal</strong>
+                        <span class="subtitle-card">Subtitle</span>
+                    </div>
+                    <div class="container card">
+                        <img class="img-card" src="./img/stranger.jpeg" alt="stranger">
+                        <strong class="title-card">Stranger Things,Vol.1(a Netflix Original Series Soundtrack)</strong>
+                        <span class="subtitle-card">Kyle Dixon & Micheal Stein</span>
+                    </div>
+                    <div class="container card">
+                        <img class="img-card" src="./img/aquietplace.jpeg" alt="a quite place">
+                        <strong class="title-card">A quite place</strong>
+                        <span class="subtitle-card">Subtitle</span>
+                    </div>
+                    <div class="container card">
+                        <img class="img-card" src="./img/split.jpeg" alt="split">
+                        <strong class="title-card">Split</strong>
+                        <span class="subtitle-card">Subtitle</span>
+                    </div>
+                    <div class="container card">
+                        <img class="img-card" src="./img/cure.jpeg" alt="cure">
+                        <strong class="title-card">Split</strong>
+                        <span class="subtitle-card">A cure for wellness</span>
+                    </div>
+                </div>
             </section>
         </main>
         <footer></footer>  
