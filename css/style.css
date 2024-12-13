@@ -34,6 +34,10 @@ nav{
     justify-content: space-between;
 }
 
+.nav-top{
+    overflow: auto;
+}
+
 a{
     text-decoration: none;
     color: var(--color-text1);  
@@ -73,6 +77,8 @@ header{
     background-color:var(--bg-hedear);
     display: flex;
     flex-direction: row-reverse;
+    position: sticky;
+    top: 0;
 }
 
 .upgrade{
@@ -88,6 +94,7 @@ section{
     height: 90vh;
     width: 90vw;
     background-color: var(--bg-section);
+    overflow: auto;
 }
 
 .container-top-bar{
@@ -102,14 +109,15 @@ section{
     font-size: 0.8rem;
 }
 
-.title-recently{
+.title-recently, .tilte-creato, .tilte-popolari{
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
 
-.container-recently{
+.container-section{
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 0.5rem;
 }
 
 .img-card{
@@ -127,13 +135,23 @@ section{
     color: var(--color-text1);
     margin: 0.5rem;
     text-align: center;
-    max-width: 10rem;
+    max-width: 9rem;
 }
 
 .subtitle-card{
     color:var(--color-text2);
     text-align: center;
-    max-width: 10rem;
+    max-width: 9rem;
+}
+
+.subtitle-creato, .subtitle-popolari{
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text2);
+}
+
+.img-popolari{
+    border-radius: 50%;
 }
 
 footer{
@@ -201,6 +219,19 @@ footer{
         width: 80%;
         margin: 0 10%;
     }
+
+    .container-section{
+        justify-content: start;
+    }
+
+    .img-card{
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .title-card, .subtitle-card{
+        max-width: 6.5rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -212,7 +243,15 @@ footer{
     section{
         width: 70vw;
     }
-    
+
+    .img-card{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .title-card, .subtitle-card{
+        max-width: 9rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
