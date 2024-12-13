@@ -158,6 +158,103 @@ footer{
     height: 10vh;
     width: 100vw;
     background-color: var(--bg-footer);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left{
+    align-items: center;
+    width: 25%;
+}
+
+#img-footer{
+    width: 30%;
+    max-width: 3rem;
+    margin: auto 0.5rem;
+}
+
+.text-footer{
+    width: 30%;
+    max-width: 7rem;
+}
+
+.subtitle-footer{
+    color: var(--color-text2);
+}
+
+.icon-footer-left{
+    width: 20%;
+    color: var(--color-text1);
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.footer-center{
+    width: 50%;
+    flex-direction: column;
+}
+
+.footer-center-top{
+    width: 100%;
+    justify-content: center;
+}
+
+.footer-center-bottom{
+    justify-content: center;
+}
+
+.icon-footer-center{
+    color: var(--color-text1);
+    margin: 0.5rem;
+}
+
+.text-range{
+    margin: 0 0.5rem;
+}
+
+#range-center {
+    background-color: #ddd;
+    height:1rem;
+    width: 70%;
+}
+
+#range-center::-webkit-slider-thumb {
+    background-color: #666;
+    height: 1.2rem;
+    width: 10%;
+}
+
+.footer-right{
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.footer-right-top{
+    margin: 0.25rem 0;
+}
+
+.footer-right-bottom{
+    margin: 0.25rem 0;
+}
+
+
+.icon-footer-right{
+    color: var(--color-text1);
+    margin: 0 0.2rem;
+}
+
+#range-right {
+    background-color: #ddd;
+    height:1rem;
+    width: 50%;
+    margin-right: 0.5rem;
+}
+
+#range-right::-webkit-slider-thumb {
+    background-color: #666;
+    height: 1.2rem;
+    width: 10%;
 }
 
 @media screen and (min-width: 480px) {
@@ -231,6 +328,30 @@ footer{
 
     .title-card, .subtitle-card{
         max-width: 6.5rem;
+    }
+
+    .footer-right{
+        flex-direction: row;
+        justify-content: end;
+        width: 25%;
+    }
+
+    .footer-right-top{
+        margin: 0;
+    }
+
+    .footer-right-bottom{
+        justify-content: end;
+        width: 60%;
+        max-width: 12rem;
+        margin: 0;
+    }
+
+    #range-right {
+        background-color: #ddd;
+        height:1rem;
+        width: 100%;
+        margin-right: 0.5rem;
     }
 }
 
